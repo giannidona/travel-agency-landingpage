@@ -1,0 +1,59 @@
+<main class="header content">
+  <div class="header-video">
+    <video src="/main-video.mp4" muted autoplay loop></video>
+  </div>
+  <div class="header-content">
+    <h1>Explore your upcoming destination with our assistance</h1>
+    <input type="text" placeholder="What are you looking for?" />
+  </div>
+</main>
+
+<style>
+  .header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  .content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  .header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .header-video video {
+    margin-top: 100px;
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .header-content {
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    margin-bottom: 150px;
+  }
+
+  .header-content h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  input {
+    margin-top: 20px;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px 20px;
+    color: black;
+  }
+</style>

@@ -1,4 +1,4 @@
-<section>
+<section id="stats">
   <div class="container">
     <div class="stats">
       <p class="number">7000</p>
@@ -27,13 +27,6 @@
     justify-content: center;
   }
 
-  .container {
-    display: flex;
-    text-align: center;
-    gap: 20px;
-    gap: 50px;
-  }
-
   .stats {
     padding: 20px;
     margin: 0px 20px;
@@ -51,5 +44,12 @@
     font-size: 50px;
     margin: 0;
     padding-bottom: 12px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    section .container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 </style>

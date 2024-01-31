@@ -1,4 +1,4 @@
-<main class="header content">
+<main id="home" class="header content">
   <div class="header-video">
     <video src="/main-video.mp4" muted autoplay loop></video>
   </div>
@@ -55,5 +55,48 @@
     border-style: none;
     padding: 10px 20px;
     color: black;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .header {
+      height: auto;
+    }
+
+    .header-content {
+      color: rgb(255, 255, 255);
+      z-index: 2;
+      margin-top: 80px;
+    }
+
+    .header-content h1 {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header {
+      height: 550px;
+    }
+    .header-content {
+      color: rgb(255, 255, 255);
+    }
+
+    .header-content h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header {
+      height: 650px;
+    }
+
+    .header-content h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    /* Estilos para computadoras portátiles y escritorios */
   }
 </style>

@@ -1,4 +1,4 @@
-<section>
+<section id="contact">
   <h2>Contact us 📩</h2>
   <div class="container-mini-cards">
     <div class="mini-card">
@@ -22,7 +22,8 @@
         <input type="email" placeholder="Your email" />
       </div>
       <div>
-        <textarea name="" id="" rows="10" placeholder="Message"></textarea>
+        <textarea name="" id="" cols="90" rows="10" placeholder="Message"
+        ></textarea>
       </div>
       <div>
         <button>Send message</button>
@@ -89,5 +90,25 @@
     color: white;
     font-size: 20px;
     border-radius: 15px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .container-mini-cards {
+      display: block;
+      text-align: center;
+      margin: auto;
+    }
+
+    .mini-card {
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 90%;
+    }
+
+    textarea {
+      max-width: 90%;
+    }
   }
 </style>
